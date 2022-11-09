@@ -11,6 +11,7 @@ if (int(input("Enter the number of the folder: "))) in folder:
 else:
     print("NO")
 
+
 """
 2. Some total:
 Print the total of the list.
@@ -20,7 +21,8 @@ for i in range(int(input("Enter the number of cash: "))):
     cash.append(int(input()))
 
 print("\nTotal:")
-print(*cash, sep=" + ",end=" = ") ; print(f"{sum(cash)}")
+print(*cash, sep=" + ",end=" = ")
+print(f"{sum(cash)}")
 
 """
 High Scorer 3:
