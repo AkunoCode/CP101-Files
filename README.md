@@ -1,6 +1,6 @@
 # CP101 Course Repository 
 
-This repository contains class activities and personal practice activities for the CP101 Course, Fundamentals of Programming, at Manuel S. Enverga University Foundation. 
+This repository contains class activities and personal practice activities for the CP101 Course, Fundamentals of Programming, at Manuel S. Enverga University Foundation. (AY 2022-2023) 
 
 ## Course Description
 
