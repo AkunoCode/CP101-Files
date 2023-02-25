@@ -9,11 +9,13 @@ import re
 
 email = input("Enter your email: ")
 
+
 def splitByAt(email):
     if email.count("@") == 1:
         checkDotDNS(email.split("@"))
     else:
         print("Invalid Email")
+
 
 def checkDotDNS(email):
     if email[-1].count(".") == 1:
@@ -22,6 +24,7 @@ def checkDotDNS(email):
     else:
         print("Invalid Email")
 
+
 def characterChecking(email):
     validity = []
     if re.match(r"^[\w\.]+$", email[0]):
@@ -29,19 +32,20 @@ def characterChecking(email):
     else:
         validity.append(False)
 
-    if email[1][0].isalnum() and len(email[1][1])>= 2:
+    if email[1][0].isalnum() and len(email[1][1]) >= 2:
         validity.append(True)
     else:
         validity.append(False)
 
-    if email[1][1].isalnum() and len(email[1][1])>= 2:
+    if email[1][1].isalnum() and len(email[1][1]) >= 2:
         validity.append(True)
     else:
         validity.append(False)
 
     if False in validity:
         print("Invalid Email")
-    else: 
+    else:
         print("Valid Email")
+
 
 splitByAt(email)
